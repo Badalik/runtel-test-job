@@ -1,4 +1,4 @@
-# Runtel
+# RunTel
 
 RunTel test job repository
 
