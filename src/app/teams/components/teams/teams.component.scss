@@ -1,0 +1,10 @@
+@use 'abstracts/functions';
+
+li {
+  font-size: functions.to-rem(22px);
+  font-weight: 500;
+
+  &:not(:last-child) {
+    margin-bottom: functions.to-rem(20px);
+  }
+}

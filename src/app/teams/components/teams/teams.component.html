@@ -1,0 +1,7 @@
+<ul>
+  @for (team of teams(); track team.name) {
+    <li>
+      <a [routerLink]="[team.id]">{{ team.name }}</a>
+    </li>
+  }
+</ul>

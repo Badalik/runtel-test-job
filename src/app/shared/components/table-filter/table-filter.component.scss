@@ -1,0 +1,15 @@
+@use 'abstracts/functions';
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 functions.to-rem(16px);
+}
+
+.col {
+  width: functions.to-rem(200px);
+}
+
+mat-form-field {
+  width: 100%;
+}

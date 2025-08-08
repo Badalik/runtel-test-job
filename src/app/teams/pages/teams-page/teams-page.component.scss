@@ -1,0 +1,5 @@
+@use 'abstracts/functions';
+
+header {
+  margin-bottom: functions.to-rem(30px);
+}

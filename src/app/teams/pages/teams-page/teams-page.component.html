@@ -1,0 +1,11 @@
+<app-container mode="center">
+  <header>
+    <app-heading
+      [h]="2"
+      text="Команды"
+      mode="bordered"
+    ></app-heading>
+  </header>
+
+  <app-teams [teams]="teams$ | async"></app-teams>
+</app-container>

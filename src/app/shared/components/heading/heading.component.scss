@@ -1,0 +1,25 @@
+@use 'abstracts/functions';
+@use 'abstracts/variables';
+
+:host {
+  display: block;
+  font-family: variables.$font-proxima;
+  font-weight: 600;
+  line-height: 1.18;
+  letter-spacing: 1px;
+  color: variables.$color-text;
+
+  &.bordered {
+    padding-bottom: functions.to-rem(20px);
+    border-bottom: 1px solid variables.$color-primary;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: functions.to-rem(38px);
+}

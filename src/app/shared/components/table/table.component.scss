@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  height: 100%;
+}
+
+.table {
+  flex: 1;
+  overflow-y: auto;
+}

@@ -1,0 +1,10 @@
+<app-container mode="full h100">
+  @let data = squad();
+
+  @if (data !== null) {
+    <app-table
+      [columns]="columns"
+      [data]="data"
+    ></app-table>
+  }
+</app-container>
