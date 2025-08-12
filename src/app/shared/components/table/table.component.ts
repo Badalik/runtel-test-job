@@ -77,15 +77,6 @@ export class TableComponent implements OnInit {
 
   public ngOnInit(): void {
     const preparedData = this.data().map((p, i) => ({ id: i, data: p, edit: false }));
-    /*const preparedData = this.data().map((p, i) => {
-      for (const column of this.columns()) {
-        if (column.type === ColumnType.DATE) {
-          p[column.name] = new Date(p[column.name] as string);
-        }
-      }
-
-      return { id: i, data: p, edit: false };
-    });*/
 
     this.displayedColumns = this.columns().map((p) => p.name);
     this.dataSource = new MatTableDataSource(preparedData);
