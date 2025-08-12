@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, input, OnInit, ViewChild } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatIconButton } from '@angular/material/button';
@@ -52,6 +53,7 @@ interface PreparedDataSourceData {
     MatFormField,
     FormsModule,
     MatInput,
+    DatePipe,
   ],
   templateUrl: './table.component.html',
   styleUrl: './table.component.scss',

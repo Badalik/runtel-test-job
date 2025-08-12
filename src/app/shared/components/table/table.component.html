@@ -48,12 +48,18 @@
                 <input
                   matInput
                   [(ngModel)]="row.data[column.name]"
-                  type="text"
+                  type="date"
                 >
               }
             </mat-form-field>
-          } @else {
-            {{ value !== null ? value + additional : '-' }}
+          }
+
+          @if (!row.edit) {
+            @if (column.type === columnType.DATE) {
+              {{ value !== null ? (value | date:'dd.MM.yyyy') : '-' }}
+            } @else {
+              {{ value !== null ? value + additional : '-' }}
+            }
           }
         </td>
       </ng-container>
