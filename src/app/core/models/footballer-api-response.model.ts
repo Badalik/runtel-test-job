@@ -1,4 +1,5 @@
 export interface FootballerApiResponse {
+  [p: string]: string | number | null;
   id: number;
   name: string;
   birth: string;
