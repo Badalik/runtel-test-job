@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 import { ColumnType } from '@core/enums';
 import { FootballerApiResponse, TableColumn } from '@core/models';
@@ -14,6 +14,7 @@ import { TableComponent } from '@shared/components/table';
   ],
   templateUrl: './team.component.html',
   styleUrl: './team.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TeamComponent {
 

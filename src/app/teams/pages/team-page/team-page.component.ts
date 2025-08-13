@@ -1,5 +1,5 @@
 import { AsyncPipe } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
 import { TeamComponent } from '@teams/components/team';
 
@@ -14,6 +14,7 @@ import { TEAM_TOKEN, teamPageProviders } from './team-page.providers';
   providers: teamPageProviders,
   templateUrl: './team-page.component.html',
   styleUrl: './team-page.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TeamPageComponent {
 

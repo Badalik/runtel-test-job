@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-container',
@@ -8,6 +8,7 @@ import { Component, input } from '@angular/core';
   },
   templateUrl: './container.component.html',
   styleUrl: './container.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContainerComponent {
 

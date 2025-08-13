@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { TeamApiResponse } from '@core/models';
@@ -10,6 +10,7 @@ import { TeamApiResponse } from '@core/models';
   ],
   templateUrl: './teams.component.html',
   styleUrl: './teams.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TeamsComponent {
 

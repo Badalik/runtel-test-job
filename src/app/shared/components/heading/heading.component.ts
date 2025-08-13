@@ -1,4 +1,4 @@
-import { Component, ElementRef, inject, input, OnInit, Renderer2 } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, inject, input, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-heading',
@@ -8,6 +8,7 @@ import { Component, ElementRef, inject, input, OnInit, Renderer2 } from '@angula
   },
   templateUrl: './heading.component.html',
   styleUrl: './heading.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HeadingComponent implements OnInit {
 
