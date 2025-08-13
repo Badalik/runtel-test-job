@@ -6,19 +6,21 @@ import rxjsX from 'eslint-plugin-rxjs-x';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  eslint.configs.recommended,
-  // tseslint.configs.recommended,
-  tseslint.configs.strict,
-  tseslint.configs.stylistic,
-  tseslint.configs.recommendedTypeChecked,
-  tseslint.configs.strictTypeChecked,
-  tseslint.configs.stylisticTypeChecked,
-  angular.configs.tsRecommended,
-  importPlugin.flatConfigs.recommended,
-  importPlugin.flatConfigs.typescript,
-  rxjsX.configs.recommended,
   {
     files: ['**/*.{js,mjs,cjs,ts}'],
+    extends: [
+      eslint.configs.recommended,
+      // tseslint.configs.recommended,
+      tseslint.configs.strict,
+      tseslint.configs.stylistic,
+      tseslint.configs.recommendedTypeChecked,
+      tseslint.configs.strictTypeChecked,
+      tseslint.configs.stylisticTypeChecked,
+      angular.configs.tsRecommended,
+      importPlugin.flatConfigs.recommended,
+      importPlugin.flatConfigs.typescript,
+      rxjsX.configs.recommended,
+    ],
     plugins: {
       '@stylistic': stylisticTs,
     },
